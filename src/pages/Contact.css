@@ -1,0 +1,88 @@
+/* En el archivo Contact.css */
+.contacto-container > nav{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    /* Otros estilos para el contenedor principal de la página de Contacto... */
+  }
+  
+
+  
+  div > form > input {
+    background: transparent;
+    border: 2px solid #96E2DF;
+    border-radius: 18px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.8px;
+    font-size: 16px;
+    height: 40px;
+    line-height: 24px;
+    padding: 22px;
+    box-shadow: none;
+    margin: 0.3rem;
+    width: 380px;
+    height: 40px;
+  }
+  
+  div > form > .input-mesaje {
+    height: 8rem;
+  }
+  
+  div > form > .input-mesaje::placeholder {
+    position: absolute;
+    top: 16px;
+    left: 19px;
+    color: #999;
+  }
+  
+  .error_email {
+    color: rgb(50, 48, 48);
+    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    font-size: 0.95rem;
+  }
+  
+  .error_message {
+    color: rgb(50, 48, 48);
+    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    font-size: 0.95rem;
+  }
+  
+  div > form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+  }
+  
+  div > form > h4 {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    color: #616161;
+    font-size: 1.4rem;
+    letter-spacing: 0.4px;
+    margin: 1rem;
+  }
+  
+  div > form > button {
+    margin: 2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #616161;
+    letter-spacing: 0.06rem;
+    background-color: #96E2DF;
+    padding: 1rem;
+    width: 12rem;
+    border-radius: 2rem;
+    border: none;
+    text-transform: uppercase;
+    box-shadow: 0 4px 10px 0 rgba(123, 124, 139, 0.37);
+  }
+  

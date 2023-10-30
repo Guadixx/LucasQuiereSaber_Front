@@ -1,0 +1,34 @@
+:root {
+  --color-highlight: #e11b22;
+  --dark-bg: #111010;
+  --dark-primary: #f8f8f8;
+  --light-bg: #f8f8f8;
+  --light-primary: #111010;
+  --font-heading: "Montserrat", sans-serif;
+  --font-body: "Montserrat", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Evita la barra de desplazamiento vertical */
+  font-family: var(--font-body);
+  background-color: #e5ecdc;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+button {
+  cursor: pointer;
+}
