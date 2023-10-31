@@ -1,25 +1,29 @@
 .header_content{
-    display: flex;
+  display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between; /* Utilizar espacio entre elementos del header */
   color: #fff; /* Color de texto */
   padding: 10px; /* Espaciado interno del encabezado */
+ 
 }
 
 header > div > nav {
-    margin: 1rem; 
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Alinear los elementos del menú hacia la derecha */
+  margin: 1rem;
   }
   
   header > div > nav > a{
-      margin: 2rem;
+      margin: 1rem;
       font-size: 1.2rem;
       font-weight: 600;
       color: #616161;
       letter-spacing: 0.06rem;
+      text-decoration: none;
   }
   
   header > div > nav > a:hover{
-      margin: 2rem;
       font-size: 1.2rem;
       font-weight: 600;
       color: #616161;
@@ -29,13 +33,18 @@ header > div > nav {
       border-radius: 2rem;
   }
   
-    @media screen and (max-width: 500px) {
-      header {
-        flex-direction: column;
-        align-items: center;
-      }
-      header > ul > li > .toggle > .l:before {
-        right: 28px;
-        top: 11%;
-      }
+  @media screen and (max-width: 500px) {
+    .header_content {
+        flex-direction: column; /* Cambiar a disposición de columna en pantallas más pequeñas */
+        align-items: center; /* Centrar en el eje transversal */
     }
+
+    header > div > nav {
+        margin: 1rem 0; /* Ajustar el margen en pantallas más pequeñas */
+        justify-content: center; /* Centrar los elementos del menú */
+    }
+
+    header > div > nav > a {
+        margin: 0.5rem; /* Reducir el margen entre elementos */
+    }
+}
